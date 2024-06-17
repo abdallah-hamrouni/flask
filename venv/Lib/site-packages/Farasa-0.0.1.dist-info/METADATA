@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: Farasa
+Version: 0.0.1
+Summary: Farasa segmenter implemented in pure Python
+Home-page: https://github.com/disooqi/PyFarasa
+Author: Mohamed Eldesouki
+Author-email: mohamed@eldesouki.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Natural Language :: Arabic
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: importlib-resources ; python_version<'3.7'
+
+# Farasa Segmenter (Non-official)
+
+## Usage
+```python
+>>> from farasa import segmentation as s
+>>> s.segmentLine("والمكتبات")
+>>> ['و+ال+مكتب+ات']
+>>> segments = s.segmentLine(" ثورة في مشهد الكعك")
+>>> for tok in segments:
+>>> ... print(tok)
+>>> ...
+>>> 'ثور+ة'
+>>> 'في'
+>>> 'مشهد'
+>>> 'ال+كعك'
+```
+
+
+
+
+
+
